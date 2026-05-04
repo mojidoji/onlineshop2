@@ -12,9 +12,9 @@
     }
   },
   "rewrites": [
-    { "source": "/site", "destination": "/site/wellcome" },
-    { "source": "/site/:path*", "destination": "/site/wellcome" },
-    { "source": "/:path*", "destination": "/site/wellcome" }
+    { "source": "/api", "destination": "/api/index" },
+    { "source": "/api/:path*", "destination": "/api/index" },
+    { "source": "/:path*", "destination": "/api/index" }
   ],
   "trailingSlash": false
 }
