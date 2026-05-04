@@ -18,8 +18,8 @@ if (AUTO_FRONTEND === "0" || AUTO_FRONTEND === "false" || AUTO_FRONTEND === "off
 
 const TEMPLATE_ROOT = join("templates", "landing");
 const LANDING_TEMPLATE = (process.env.LANDING_TEMPLATE || "").trim();
-const publicRelayPath = normalizePath(process.env.PUBLIC_RELAY_PATH || "/api");
-const relayPath = normalizePath(process.env.RELAY_PATH || "/api");
+const publicRelayPath = normalizePath(process.env.PUBLIC_RELAY_PATH || "/site");
+const relayPath = normalizePath(process.env.RELAY_PATH || "/site");
 
 const seed = [
   process.env.VERCEL_GIT_COMMIT_SHA || "",
